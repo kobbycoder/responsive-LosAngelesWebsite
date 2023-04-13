@@ -1,0 +1,31 @@
+{
+  "name": "skilltest",
+  "version": "1.0.0",
+  "description": "Front End Developer Dynamic Skills Test V2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss src/input.css -o dist/output.css",
+    "watch:css": "tailwindcss src/input.css -o dist/output.css -w",
+    "build:assets": "copyfiles -f src/img/**/* dist/images",
+    "build": "npm run build:css && npm run build:assets",
+    "start": "npx live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobbycoder/skilltest.git"
+  },
+  "author": "Alexander Acquah Osman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kobbycoder/skilltest/issues"
+  },
+  "homepage": "https://github.com/kobbycoder/skilltest#readme",
+  "dependencies": {
+    "flowbite": "^1.6.5"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "tailwindcss": "^3.3.1"
+  }
+}

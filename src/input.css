@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+.bg-transparent {
+    background-color: transparent !important;
+  }
+
+.myslider .slick-dots {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.myslider .slick-dots li {
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.myslider .slick-dots li button {
+    background-color: #fff;
+    opacity: .25;
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    font-size: 0;
+    border-radius: 0.25rem;
+}
+
+.myslider .slick-dots li.slick-active button {
+    color: #fff;
+    opacity: .75;
+}

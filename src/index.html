@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Skill Test</title>
+  </head>
+  <body class="">
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <header class="flex justify-center">
+      <nav
+        class="bg-transparent fixed w-full z-10 transition-colors duration-300 ease-in-out dark:bg-gray-900"
+      >
+        <div
+          class="max-w-4xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="./img/logo.png"
+              class="h-12 mr-3 border rounded-full"
+              alt="Logo"
+            />
+            <div class="hidden justify-center items-center" id="logo_name">
+              <h1
+                class="font-['Bebas_Neue'] text-2xl -mb-3 text-gray-700 tracking-wider"
+              >
+                LOSANGELES
+              </h1>
+              <h1
+                class="font-['Bebas_Neue'] text-2xl -mb-1 tracking-widest text-slate-600"
+              >
+                MOUNTAINS
+              </h1>
+            </div>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-slate-800 md:text-white rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-transparent dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#history"
+                  class="block py-2 font-['Lato'] italic pl-3 pr-4 text-white bg-transparent text-sm rounded md:bg-transparent md:p-0 dark:text-white underline"
+                  aria-current="page"
+                  >01. HISTORY</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="block py-2 font-['Lato'] italic pl-3 pr-4 text-white bg-transparent text-sm rounded md:bg-transparent md:p-0 dark:text-white underline"
+                  aria-current="page"
+                  >02. TEAM</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="bg-home bg-cover bg-center md:bg-top bg-no-repeat h-screen"
+      ></div>
+
+      <section
+        id="history"
+        class="bg-history bg-cover bg-top h-screen pt-20 w-full"
+      >
+        <div class="flex flex-col h-full justify-between">
+          <div class="w-full flex justify-center">
+            <div class="flex-col max-w-4xl">
+              <div class="flex items-end">
+                <h1
+                  class="font-['Oswald'] text-9xl text-slate-800 opacity-30 font-bold"
+                >
+                  01.
+                </h1>
+                <p
+                  class="font-['Oswald'] text-3xl text-slate-700 mb-7 ml-32 absolute"
+                >
+                  HISTORY
+                </p>
+              </div>
+              <div class="md:w-5/6 px-5 md:px-0 md:ml-20">
+                <p class="font-['Lato'] text-sm text-center md:text-left">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  in ante viverra, rutrum erat rutrum, consectetur mi. Proin at
+                  maximus est. Nullam purus ex, iaculis sed erat sed, blandit
+                  tincidunt quam. Cras scelerisque id quam sed dignissim
+                  Pellentesque urna nunc, gravida quis hendrerit ac, tristique
+                  ut quam. Vivamus suscipit dignissim tortor nec congue.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="p-3 h-44 flex justify-center"
+            style="background-color: rgba(21, 47, 73, 0.716)"
+          >
+            <div class="myslider w-full max-w-4xl items-center" id="my-slider">
+              <div class="">
+                <img
+                  src="/src/img/carousel_1.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/img/carousel_2.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/img/carousel_1.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/img/carousel_2.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/img/carousel_1.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+              <div>
+                <img
+                  src="/src/img/carousel_2.jpeg"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="h-screen pt-20">
+        <div class="flex-col justify-center h-full">
+          <div class="w-full flex justify-center">
+            <div class="max-w-4xl flex-col">
+              <div class="flex md:flex-row flex-col items-center md:px-4">
+                <div class="flex items-end">
+                  <h1
+                    class="font-['Oswald'] text-9xl text-slate-800 opacity-30 font-bold"
+                  >
+                    02.
+                  </h1>
+                  <p
+                    class="font-['Oswald'] text-3xl text-slate-700 mb-7 ml-36 absolute"
+                  >
+                    CLIMB
+                  </p>
+                </div>
+
+                <div class="md:w-5/6 px-2 md:px-0 md:ml-20">
+                  <p class="font-['Lato'] text-sm text-center md:text-left">
+                    Cras scelerisque id quam sed dignissim Pellentesque urna
+                    nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus
+                    suscipit dignissim tortor nec congue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 bg-slate-700">
+            <div class="w-full flex justify-center">
+              <div class="flex-col md:w-4/6">
+                <ul
+                  class="flex flex-wrap text-lg font-medium text-center font-['Oswald'] text-gray-500 dark:border-gray-700 dark:text-gray-400"
+                  id="myTab"
+                  data-tabs-toggle="#myTabContent"
+                  role="tablist"
+                >
+                  <li class="mr-2">
+                    <button
+                      aria-current="page"
+                      class="inline-block p-4 text-slate-700 bg-gray-300 active underline"
+                      id="mountain1-tab"
+                      data-tabs-target="#mountain1"
+                      type="button"
+                      role="tab"
+                      aria-controls="mountain1"
+                      aria-selected="false"
+                    >
+                      MOUNTAIN 1
+                    </button>
+                  </li>
+                  <li class="mr-2">
+                    <button
+                      class="inline-block p-4 hover:text-gray-600 hover:bg-gray-300 focus:text-gray-500 underline"
+                      id="mountain2-tab"
+                      data-tabs-target="#mountain2"
+                      type="button"
+                      role="tab"
+                      aria-controls="mountain1"
+                      aria-selected="false"
+                    >
+                      MOUNTAIN 2
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="myTabContent" class="h-full">
+            <div
+              class="p-4 bg-mountain_one bg-center h-full"
+              id="mountain1"
+              role="tabpanel"
+              aria-labelledby="mountain1-tab"
+            >
+              <div class="flex justify-center lg:w-4/6">
+                <div
+                  class="bg-gray-300 md:w-2/6 p-8 mt-24"
+                  style="background-color: rgba(255, 255, 255, 0.716)"
+                >
+                  <h2
+                    class="font-bold text-slate-800 text-4xl font-['Oswald'] mb-5"
+                  >
+                    SCHEDULE
+                  </h2>
+                  <div class="flex flex-col w-full font-['Lato']">
+                    <div class="flex justify-between text-sm">
+                      <h1>25 Nov 2016</h1>
+                      <h1>Vestibulum viverra</h1>
+                    </div>
+                    <div class="flex justify-between mb-5 text-sm">
+                      <h1>28 Nov 2016</h1>
+                      <h1>Vestibulum viverra</h1>
+                    </div>
+                    <div class="flex justify-between mb-5 text-sm">
+                      <h1>18 Dec 2016</h1>
+                      <h1>Vestibulum viverra</h1>
+                    </div>
+                    <div class="flex justify-between text-sm">
+                      <h1>7 Jan 2017</h1>
+                      <h1 class="ml-10">Vestibulum viverra</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-4 bg-mountain_two bg-center h-full"
+              id="mountain2"
+              role="tabpanel"
+              aria-labelledby="mountain2-tab"
+            ></div>
+          </div>
+
+          <footer
+            class="w-full items-center bottom-0 bg-slate-800 p-3 flex justify-center"
+          >
+            <div
+              class="flex md:w-4/6 w-full flex-col lg:flex-row text-center md:justify-between items-center"
+            >
+              <div class="">
+                <a href="#" class="flex justify-center items-center">
+                  <img
+                    src="./img/logo.png"
+                    class="h-12 mr-3 border rounded-full"
+                    alt="Logo"
+                  />
+                  <div class="justify-center items-center" id="logo_name">
+                    <h1
+                      class="font-['Bebas_Neue'] text-2xl -mb-3 text-gray-700 tracking-wider"
+                    >
+                      LOSANGELES
+                    </h1>
+                    <h1
+                      class="font-['Bebas_Neue'] text-2xl -mb-1 tracking-widest text-slate-600"
+                    >
+                      MOUNTAINS
+                    </h1>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="text-xs text-slate-600 mt-5 md:mt-0 font-['Lato'] italic font-bold"
+              >
+                <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
