@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss src/input.css -o dist/output.css",
     "watch:css": "tailwindcss src/input.css -o dist/output.css -w",
-    "build:assets": "copyfiles -f src/img/**/* dist/images",
-    "build": "npm run build:css && npm run build:assets",
+    "build:assets": "copyfiles -f src/img/**/* dist/img",
+    "build:js": "copyfiles -f src dist/index.js",
+    "build": "npm run build:css && npm run build:assets && npm run build:js",
     "start": "npx live-server"
   },
   "repository": {
@@ -22,7 +23,8 @@
   },
   "homepage": "https://github.com/kobbycoder/skilltest#readme",
   "dependencies": {
-    "flowbite": "^1.6.5"
+    "flowbite": "^1.6.5",
+    "nunjucks": "^3.2.4"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",

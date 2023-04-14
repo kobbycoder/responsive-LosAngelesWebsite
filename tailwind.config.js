@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home': "url('images/home_bg.jpg')",
-        'history': "url('images/history_bg.png')",
-        'mountain_one': "url('images/mountain1.jpeg')",
-        'mountain_two': "url('images/mountain2.jpeg')",
+        'home': "url('img/home_bg.jpg')",
+        'history': "url('img/history_bg.png')",
+        'mountain_one': "url('img/mountain1.jpeg')",
+        'mountain_two': "url('img/mountain2.jpeg')",
       },
       backgroundPosition: {
         top:'top',
